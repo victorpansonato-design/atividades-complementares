@@ -10,7 +10,7 @@
       { "source": "/atividades-complementares/regulamento/:file*", "destination": "/regulamento/:file*" },
       { "source": "/atividades-complementares/icone_header.png", "destination": "/icone_header.png" },
       { "source": "/atividades-complementares", "destination": "/index.html" },
-      { "source": "/atividades-complementares/:path*", "destination": "/index.html" }
+      { "source": "/atividades-complementares/(.*)", "destination": "/index.html" }
    ],
    "headers": [
       {
