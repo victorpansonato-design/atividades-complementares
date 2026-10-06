@@ -1,0 +1,185 @@
+{
+   "schemaVersion": 1,
+   "units": "integer_minutes",
+   "cases": [
+      {
+         "id": "tipo_reservado",
+         "input": {
+            "totalLimitMinutes": 6000,
+            "approvedMinutes": 4800,
+            "reservedMinutes": 1200
+         },
+         "expected": {
+            "availableMinutes": 0,
+            "reason": "reserved_in_review"
+         }
+      },
+      {
+         "id": "tipo_aprovado",
+         "input": {
+            "totalLimitMinutes": 6000,
+            "approvedMinutes": 6000,
+            "reservedMinutes": 0
+         },
+         "expected": {
+            "availableMinutes": 0,
+            "reason": "approved_limit_reached"
+         }
+      },
+      {
+         "id": "limite_por_publicacao",
+         "input": {
+            "totalLimitMinutes": 2400,
+            "approvedMinutes": 600,
+            "reservedMinutes": 0,
+            "unitLimitMinutes": 1200
+         },
+         "expected": {
+            "availableMinutes": 1800,
+            "maximumRequestMinutes": 1200
+         }
+      },
+      {
+         "id": "limite_semestre",
+         "input": {
+            "totalLimitMinutes": 12000,
+            "approvedMinutes": 900,
+            "reservedMinutes": 300,
+            "semesterLimitMinutes": 1200,
+            "semesterApprovedMinutes": 900,
+            "semesterReservedMinutes": 300
+         },
+         "expected": {
+            "availableMinutes": 10800,
+            "semesterAvailableMinutes": 0,
+            "maximumRequestMinutes": 0
+         }
+      },
+      {
+         "id": "certificado_maior_que_saldo",
+         "input": {
+            "totalLimitMinutes": 3000,
+            "approvedMinutes": 2400,
+            "reservedMinutes": 0,
+            "certificateMinutes": 2400
+         },
+         "expected": {
+            "availableMinutes": 600,
+            "maximumRequestMinutes": 600,
+            "certificateMinutesUnchanged": 2400
+         }
+      },
+      {
+         "id": "corrigir_sem_dupla_reserva",
+         "input": {
+            "totalLimitMinutes": 2400,
+            "approvedMinutes": 1200,
+            "reservedMinutesIncludingSelf": 600,
+            "selfReservedMinutes": 600
+         },
+         "expected": {
+            "availableForReplacementMinutes": 1200
+         }
+      },
+      {
+         "id": "aprovacao_parcial",
+         "input": {
+            "totalLimitMinutes": 6000,
+            "previousApprovedMinutes": 0,
+            "previousReservedMinutes": 600,
+            "requestRequestedMinutes": 600,
+            "decisionApprovedMinutes": 60
+         },
+         "expected": {
+            "approvedMinutes": 60,
+            "reservedMinutes": 0,
+            "availableMinutes": 5940,
+            "releasedMinutes": 540
+         }
+      },
+      {
+         "id": "recusa_libera",
+         "input": {
+            "totalLimitMinutes": 3000,
+            "previousApprovedMinutes": 0,
+            "previousReservedMinutes": 1200,
+            "requestRequestedMinutes": 1200,
+            "decisionApprovedMinutes": 0,
+            "decision": "nao_aprovada"
+         },
+         "expected": {
+            "approvedMinutes": 0,
+            "reservedMinutes": 0,
+            "availableMinutes": 3000
+         }
+      },
+      {
+         "id": "resumo_curso",
+         "input": {
+            "requiredMinutes": 9600,
+            "approvedMinutes": 1560,
+            "reservedMinutes": 1800
+         },
+         "expected": {
+            "remainingMinutes": 8040,
+            "progressRatio": 0.1625,
+            "pendingDoesNotChangeRemaining": true
+         }
+      },
+      {
+         "id": "duracao_fracionada",
+         "input": {
+            "hours": 1,
+            "minutes": 30
+         },
+         "expected": {
+            "durationMinutes": 90
+         }
+      },
+      {
+         "id": "duracao_acima_24h",
+         "input": {
+            "hours": 160,
+            "minutes": 0
+         },
+         "expected": {
+            "durationMinutes": 9600
+         }
+      },
+      {
+         "id": "rascunho_nao_reserva",
+         "input": {
+            "totalLimitMinutes": 2400,
+            "approvedMinutes": 600,
+            "reservedMinutes": 0,
+            "draftMinutes": 1200
+         },
+         "expected": {
+            "availableMinutes": 1800
+         }
+      },
+      {
+         "id": "uso_unico_ativo",
+         "input": {
+            "oneTime": true,
+            "approvedUses": 0,
+            "activeUses": 1
+         },
+         "expected": {
+            "canSubmit": false,
+            "reason": "one_time_in_review"
+         }
+      },
+      {
+         "id": "reconsideracao_sem_duplicar",
+         "input": {
+            "lineageId": "ORIGINAL",
+            "rejectedOriginalMinutes": 600,
+            "activeReconsiderationMinutes": 600
+         },
+         "expected": {
+            "reservedMinutesForLineage": 600
+         }
+      }
+   ]
+}

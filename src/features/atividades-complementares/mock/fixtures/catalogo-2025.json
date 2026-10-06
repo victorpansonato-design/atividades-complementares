@@ -1,0 +1,1234 @@
+{
+   "schemaVersion": 1,
+   "purpose": "Briefing de catálogo; IDs locais não são IDs do backend",
+   "allLinesTranscribed": 38,
+   "normativeVersion": "2025-03-26",
+   "mockAssumptions": [
+      "budgetKey independente por linha/subtipo; confirmar compartilhamento no TI",
+      "Atividades por semestre agregadas no período, não por protocolo",
+      "Atribuição fixa depende de análise; política de crédito parcial não confirmada"
+   ],
+   "activities": [
+      {
+         "localId": "25_001",
+         "regulationCode": "25_001",
+         "variant": null,
+         "systemCode": "25_001",
+         "displayName": "Iniciação científica e tecnológica",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_001",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "project_assignment",
+            "limitMinutes": 1800
+         },
+         "documentRequirements": [
+            {
+               "key": "conclusao",
+               "anyOf": ["Certificado de conclusão"],
+               "canShareFileWithOtherRequirements": true
+            },
+            {
+               "key": "apresentacao",
+               "anyOf": ["Apresentação do projeto"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_002",
+         "regulationCode": "25_002",
+         "variant": null,
+         "systemCode": "25_002",
+         "displayName": "Conferencista, mediador ou debatedor na área de formação",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_002",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "event_cap",
+            "limitMinutes": 600
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_003-a",
+         "regulationCode": "25_003",
+         "variant": "a",
+         "systemCode": "25_003a",
+         "displayName": "Publicação em periódico científico ou anais de congresso",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_003-a",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "publication_cap",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "publicacao",
+               "anyOf": ["Cópia da publicação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_003-b",
+         "regulationCode": "25_003",
+         "variant": "b",
+         "systemCode": "25_003b",
+         "displayName": "Publicação em livro ou capítulo de livro",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_003-b",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "publication_cap",
+            "limitMinutes": 1800
+         },
+         "documentRequirements": [
+            {
+               "key": "publicacao",
+               "anyOf": ["Cópia da publicação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_004",
+         "regulationCode": "25_004",
+         "variant": null,
+         "systemCode": "25_004",
+         "displayName": "Apresentação de trabalho em congresso, simpósio ou similar",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_004",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "presentation_cap",
+            "limitMinutes": 600
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_005-membro",
+         "regulationCode": "25_005",
+         "variant": "membro",
+         "systemCode": null,
+         "displayName": "Membro efetivo de grupo de pesquisa vinculado ao CNPq",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_005-membro",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_005-participacao",
+         "regulationCode": "25_005",
+         "variant": "participacao",
+         "systemCode": null,
+         "displayName": "Participação em atividades de grupo de pesquisa do CNPq",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_005-participacao",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 4800,
+         "unitRule": {
+            "kind": "event_assignment",
+            "limitMinutes": 120
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_006-membro",
+         "regulationCode": "25_006",
+         "variant": "membro",
+         "systemCode": null,
+         "displayName": "Membro efetivo de grupo de estudo",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_006-membro",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 5
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_006-participacao",
+         "regulationCode": "25_006",
+         "variant": "participacao",
+         "systemCode": null,
+         "displayName": "Participação em atividades de grupo de estudo",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_006-participacao",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 4800,
+         "unitRule": {
+            "kind": "event_assignment",
+            "limitMinutes": 120
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_007-membro",
+         "regulationCode": "25_007",
+         "variant": "membro",
+         "systemCode": null,
+         "displayName": "Membro efetivo de liga acadêmica",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_007-membro",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_007-participacao",
+         "regulationCode": "25_007",
+         "variant": "participacao",
+         "systemCode": null,
+         "displayName": "Participação em atividades de liga acadêmica",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_007-participacao",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 4800,
+         "unitRule": {
+            "kind": "event_assignment",
+            "limitMinutes": 120
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_008-a",
+         "regulationCode": "25_008",
+         "variant": "a",
+         "systemCode": null,
+         "displayName": "Assistência a defesas de graduação, especialização e projetos integradores",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_008-a",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 1800,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação", "Lista de presença"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_008-b",
+         "regulationCode": "25_008",
+         "variant": "b",
+         "systemCode": null,
+         "displayName": "Assistência a defesas de mestrado e doutorado",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_008-b",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 1800,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação", "Lista de presença"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_009",
+         "regulationCode": "25_009",
+         "variant": null,
+         "systemCode": "25_009",
+         "displayName": "Ouvinte em congressos, palestras, minicursos, oficinas e similares na área",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_009",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 6000,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_010-a",
+         "regulationCode": "25_010",
+         "variant": "a",
+         "systemCode": null,
+         "displayName": "Cursos e atividades artísticas ou culturais",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_010-a",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "mode_dependent",
+            "limitMinutes": null,
+            "modes": [
+               {
+                  "id": "curso",
+                  "label": "Curso cultural",
+                  "kind": "certificate_hours",
+                  "limitMinutes": null
+               },
+               {
+                  "id": "atividade",
+                  "label": "Atividade artística ou cultural",
+                  "kind": "activity_cap",
+                  "limitMinutes": 120
+               }
+            ]
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação", "Certificado com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": ["Prática Extensionista"],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_010-b",
+         "regulationCode": "25_010",
+         "variant": "b",
+         "systemCode": null,
+         "displayName": "Cursos e atividades culturais preparados e apresentados pelo aluno",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_010-b",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "mode_dependent",
+            "limitMinutes": null,
+            "modes": [
+               {
+                  "id": "curso",
+                  "label": "Curso cultural",
+                  "kind": "certificate_hours",
+                  "limitMinutes": null
+               },
+               {
+                  "id": "atividade",
+                  "label": "Atividade artística ou cultural",
+                  "kind": "activity_cap",
+                  "limitMinutes": 120
+               }
+            ]
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação", "Certificado com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": ["Prática Extensionista"],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_011",
+         "regulationCode": "25_011",
+         "variant": null,
+         "systemCode": "25_011",
+         "displayName": "Curso de língua estrangeira em instituição regularmente constituída",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_011",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado com carga horária e aproveitamento, comprovando frequência"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 6
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_012",
+         "regulationCode": "25_012",
+         "variant": null,
+         "systemCode": "25_012",
+         "displayName": "Atividade EAD com certificado e tempo de acesso",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_012",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3000,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de conclusão com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            },
+            {
+               "key": "tempo",
+               "anyOf": ["Comprovação do tempo de acesso no site"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_013",
+         "regulationCode": "25_013",
+         "variant": null,
+         "systemCode": "25_013",
+         "displayName": "Atividade EAD com certificado de conclusão",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_013",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 1800,
+         "unitRule": {
+            "kind": "activity_cap",
+            "limitMinutes": 120
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de conclusão"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_014",
+         "regulationCode": "25_014",
+         "variant": null,
+         "systemCode": "25_014",
+         "displayName": "Prática de laboratório, ensino, redação ou similar em outra instituição, fora da aula",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_014",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 1800,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_015-a",
+         "regulationCode": "25_015",
+         "variant": "a",
+         "systemCode": null,
+         "displayName": "Atividade de campo, visita técnica, exposição ou feira",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_015-a",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "mode_dependent",
+            "limitMinutes": null,
+            "modes": [
+               {
+                  "id": "campo_visita",
+                  "label": "Atividade de campo ou visita técnica",
+                  "kind": "activity_cap",
+                  "limitMinutes": 300
+               },
+               {
+                  "id": "exposicao_feira",
+                  "label": "Exposição ou feira na área de formação ou afim",
+                  "kind": "activity_cap",
+                  "limitMinutes": 600
+               }
+            ]
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_015-b",
+         "regulationCode": "25_015",
+         "variant": "b",
+         "systemCode": null,
+         "displayName": "Atividade simulada acadêmica, técnica ou científica",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_015-b",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3000,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_016",
+         "regulationCode": "25_016",
+         "variant": null,
+         "systemCode": "25_016",
+         "displayName": "Curso de extensão do UniAnchieta ou de outra IES",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_016",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 6000,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": ["Prática Extensionista"],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_017",
+         "regulationCode": "25_017",
+         "variant": null,
+         "systemCode": "25_017",
+         "displayName": "Estudo complementar de formação profissional em instituição reconhecida",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_017",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 7
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_018",
+         "regulationCode": "25_018",
+         "variant": null,
+         "systemCode": "25_018",
+         "displayName": "Voluntariado, ações comunitárias e campanhas de alcance social",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_018",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "mode_dependent",
+            "limitMinutes": null,
+            "modes": [
+               {
+                  "id": "campanha_unianchieta",
+                  "label": "Campanha de doação de sangue promovida pelo UniAnchieta",
+                  "kind": "activity_assignment",
+                  "limitMinutes": 900
+               },
+               {
+                  "id": "doacao_voluntaria",
+                  "label": "Doação de sangue voluntária",
+                  "kind": "activity_assignment",
+                  "limitMinutes": 180
+               },
+               {
+                  "id": "outras",
+                  "label": "Demais atividades voluntárias de alcance social",
+                  "kind": "certificate_hours",
+                  "limitMinutes": null
+               }
+            ]
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": ["Prática Extensionista"],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_019",
+         "regulationCode": "25_019",
+         "variant": null,
+         "systemCode": "25_019",
+         "displayName": "Evento esportivo oficial ou institucional",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_019",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "certificate_hours",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "certificado",
+               "anyOf": ["Certificado de participação com carga horária"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_020-membro",
+         "regulationCode": "25_020",
+         "variant": "membro",
+         "systemCode": null,
+         "displayName": "Membro efetivo da Atlética",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_020-membro",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_020-participacao",
+         "regulationCode": "25_020",
+         "variant": "participacao",
+         "systemCode": null,
+         "displayName": "Participação em atividades da Atlética",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_020-participacao",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "event_assignment",
+            "limitMinutes": 120
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_021-membro",
+         "regulationCode": "25_021",
+         "variant": "membro",
+         "systemCode": null,
+         "displayName": "Membro efetivo da Banda UniAnchieta",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_021-membro",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_021-participacao",
+         "regulationCode": "25_021",
+         "variant": "participacao",
+         "systemCode": null,
+         "displayName": "Participação em atividades da Banda UniAnchieta",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_021-participacao",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "event_assignment",
+            "limitMinutes": 120
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_022",
+         "regulationCode": "25_022",
+         "variant": null,
+         "systemCode": "25_022",
+         "displayName": "Participação em órgãos colegiados: CPA, CONEPE e CONUN",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_022",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "participacao",
+               "anyOf": ["Comprovante de participação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_023",
+         "regulationCode": "25_023",
+         "variant": null,
+         "systemCode": "25_023",
+         "displayName": "Monitoria no Centro Universitário Padre Anchieta",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_023",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 24000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 2400
+         },
+         "documentRequirements": [
+            {
+               "key": "projeto",
+               "anyOf": ["Certificado de conclusão do projeto de monitoria"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_024",
+         "regulationCode": "25_024",
+         "variant": null,
+         "systemCode": "25_024",
+         "displayName": "Aproveitamento de disciplinas não usadas como curriculares no curso atual",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_024",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 3600,
+         "unitRule": {
+            "kind": "one_time",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "historico",
+               "anyOf": ["Histórico escolar do curso de graduação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["transferencia", "retorno", "portador_de_diploma"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 8,
+            "additionalPages": [9]
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_025",
+         "regulationCode": "25_025",
+         "variant": null,
+         "systemCode": "25_025",
+         "displayName": "Estágio não obrigatório relacionado à área de formação ou afim",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_025",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "termo",
+               "anyOf": ["Termo de compromisso de estágio não obrigatório"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": ["Horas de estágio obrigatório contabilizadas simultaneamente"],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 9
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_026",
+         "regulationCode": "25_026",
+         "variant": null,
+         "systemCode": "25_026",
+         "displayName": "Representante ou vice-representante de classe",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_026",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "semester_assignment",
+            "limitMinutes": 1200
+         },
+         "documentRequirements": [
+            {
+               "key": "cadastro",
+               "source": "institutional_record",
+               "description": "Cadastro dos dados pelo coordenador no sistema acadêmico",
+               "studentUploadRequired": false
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 9
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_027",
+         "regulationCode": "25_027",
+         "variant": null,
+         "systemCode": "25_027",
+         "displayName": "Produção textual proposta e analisada por docente ou coordenação",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_027",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 600,
+         "unitRule": {
+            "kind": "review_assignment",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "producao",
+               "anyOf": ["Apresentação da produção textual"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 9
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_028",
+         "regulationCode": "25_028",
+         "variant": null,
+         "systemCode": "25_028",
+         "displayName": "Aproveitamento de AC validadas em outra IES, em transferência externa",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_028",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 2400,
+         "unitRule": {
+            "kind": "one_time",
+            "limitMinutes": null
+         },
+         "documentRequirements": [
+            {
+               "key": "historico",
+               "anyOf": ["Histórico escolar do curso de graduação"],
+               "canShareFileWithOtherRequirements": true
+            }
+         ],
+         "eligibility": ["transferencia_externa"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 9
+         },
+         "manualSubmission": true
+      },
+      {
+         "localId": "25_029",
+         "regulationCode": "25_029",
+         "variant": null,
+         "systemCode": "25_029",
+         "displayName": "Audiências judiciais ou participação em comissões parlamentares",
+         "catalogVersion": "2025-03-26",
+         "budgetKey": "mock:2025:25_029",
+         "budgetSharingConfirmed": false,
+         "totalLimitMinutes": 12000,
+         "unitRule": {
+            "kind": "mode_dependent",
+            "limitMinutes": null,
+            "modes": [
+               {
+                  "id": "audiencia",
+                  "label": "Acompanhamento de audiência judicial",
+                  "kind": "participation_duration",
+                  "limitMinutes": null
+               },
+               {
+                  "id": "comissao",
+                  "label": "Comissão parlamentar",
+                  "kind": "participation_duration",
+                  "limitMinutes": null
+               }
+            ]
+         },
+         "documentRequirements": [
+            {
+               "key": "por_modalidade",
+               "conditional": true,
+               "modes": {
+                  "audiencia": [
+                     {
+                        "key": "relatorio",
+                        "anyOf": ["Relatório conforme template da coordenação"],
+                        "canShareFileWithOtherRequirements": true
+                     },
+                     {
+                        "key": "declaracao",
+                        "anyOf": ["Declaração de acompanhamento assinada pelo magistrado"],
+                        "canShareFileWithOtherRequirements": true
+                     }
+                  ],
+                  "comissao": [
+                     {
+                        "key": "ata",
+                        "anyOf": ["Ata de reunião assinada pelos parlamentares responsáveis"],
+                        "canShareFileWithOtherRequirements": true
+                     }
+                  ]
+               }
+            }
+         ],
+         "eligibility": ["catalogo_do_aluno"],
+         "exclusions": [],
+         "source": {
+            "file": "regulamento-geral-2025.pdf",
+            "page": 9
+         },
+         "manualSubmission": true
+      }
+   ],
+   "unknownInstitutionalTypes": [
+      {
+         "localId": "25_030",
+         "regulationCode": "25_030",
+         "displayName": "Eventos realizados pelo UniAnchieta",
+         "source": "print 05",
+         "manualSubmission": false,
+         "totalLimitMinutes": null,
+         "reason": "Código visível no histórico, sem regra no PDF anexado"
+      }
+   ]
+}

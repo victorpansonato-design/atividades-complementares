@@ -1,0 +1,15 @@
+# Build e dependências
+build
+dist
+node_modules
+package-lock.json
+
+# Componentes shadcn/ui são código vendido (gerado pelo CLI) e mantêm o estilo
+# original do registry. Não reformatar para evitar churn e conflitos em updates.
+src/components/ui
+
+# Briefing privado (não versionado)
+_briefing
+
+# Arquivos de workspace do editor
+*.code-workspace

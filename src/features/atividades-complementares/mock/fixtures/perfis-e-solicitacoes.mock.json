@@ -1,0 +1,899 @@
+{
+   "schemaVersion": 1,
+   "allPersonalDataFictional": true,
+   "asOfDate": "2026-10-05",
+   "timeZone": "America/Sao_Paulo",
+   "defaultStudent": {
+      "id": "ALUNO-MOCK-001",
+      "ra": "DEMO-0001",
+      "name": "Marina Exemplo",
+      "course": "Ciências Contábeis",
+      "modality": "presencial",
+      "matrixId": "MATRIZ-DEMO",
+      "admissionDate": "2026-01-15",
+      "catalogVersion": "2025-03-26",
+      "requiredMinutes": 9600,
+      "eligibility": ["catalogo_do_aluno"],
+      "isConcluding": false,
+      "expectedConclusionDate": null,
+      "currentAcademicPeriodId": "2026-2",
+      "periodsAreMock": true,
+      "academicPeriods": [
+         {
+            "id": "2025-1",
+            "label": "2025 / 1",
+            "startDate": "2025-01-01",
+            "endDate": "2025-06-30"
+         },
+         {
+            "id": "2026-1",
+            "label": "2026 / 1",
+            "startDate": "2026-01-01",
+            "endDate": "2026-06-30"
+         },
+         {
+            "id": "2026-2",
+            "label": "2026 / 2",
+            "startDate": "2026-07-01",
+            "endDate": "2026-12-31"
+         },
+         {
+            "id": "2027-1",
+            "label": "2027 / 1",
+            "startDate": "2027-01-01",
+            "endDate": "2027-06-30"
+         }
+      ]
+   },
+   "policies": {
+      "dataMode": "mock",
+      "pendingCorrectionReserves": true,
+      "reconsiderationReservesOncePerLineage": true,
+      "globalCourseLimitBlocksNewRequests": false,
+      "maxUploadBytesPerFile": 10485760,
+      "maxFilesPerRequest": 10,
+      "uploadLimitsAreMock": true,
+      "analysisSlaBusinessDays": 30,
+      "institutionalHolidayCalendar": null,
+      "hybridConclusionPolicy": null,
+      "automaticApproval": false
+   },
+   "scenarios": [
+      {
+         "id": "base",
+         "label": "Acompanhamento e fluxos principais",
+         "studentOverrides": {},
+         "requests": [
+            {
+               "id": "B01",
+               "lineageId": "B01",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Oficina de comunicação profissional",
+               "academicPeriodId": "2026-1",
+               "startDate": "2026-03-19",
+               "endDate": "2026-03-19",
+               "requestedMinutes": 600,
+               "approvedMinutes": 60,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-03-19T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B01",
+               "decisionReason": "Aprovação parcial fictícia: atribuição de 1h na análise. Preserve solicitado e computado."
+            },
+            {
+               "id": "B02",
+               "lineageId": "B02",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Encontro acadêmico: tecnologia e negócios",
+               "academicPeriodId": "2026-1",
+               "startDate": "2026-03-04",
+               "endDate": "2026-03-04",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-03-04T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B02"
+            },
+            {
+               "id": "B03",
+               "lineageId": "B03",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Palestra: cultura digital",
+               "academicPeriodId": "2026-1",
+               "startDate": "2026-04-01",
+               "endDate": "2026-04-01",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-04-01T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B03"
+            },
+            {
+               "id": "B04",
+               "lineageId": "B04",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Semana acadêmica de gestão",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-22",
+               "endDate": "2026-09-22",
+               "requestedMinutes": null,
+               "approvedMinutes": 600,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-22T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B04"
+            },
+            {
+               "id": "B05",
+               "lineageId": "B05",
+               "activityLocalId": "25_030",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Evento institucional fictício",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-08-10",
+               "endDate": "2026-08-10",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-08-10T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B05",
+               "fixtureNotice": "5h inventadas para o mock; print não confirma esta duração. Tipo sem regra disponível."
+            },
+            {
+               "id": "B06",
+               "lineageId": "B06",
+               "activityLocalId": "25_012",
+               "catalogVersion": "2025-03-26",
+               "status": "em_analise",
+               "origin": "manual",
+               "title": "Curso online de ferramentas de produtividade",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 1200,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [
+                  {
+                     "id": "FA01",
+                     "name": "certificado-demonstracao.pdf",
+                     "demoOnly": true,
+                     "bytesAvailable": false,
+                     "requirementKeys": ["certificado", "tempo"]
+                  }
+               ],
+               "history": [
+                  {
+                     "event": "em_analise",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B06",
+               "certificateMinutes": 1200
+            },
+            {
+               "id": "B07",
+               "lineageId": "B07",
+               "activityLocalId": "25_016",
+               "catalogVersion": "2025-03-26",
+               "status": "precisa_correcao",
+               "origin": "manual",
+               "title": "Curso de extensão: comunicação e carreira",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 600,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "precisa_correcao",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B07",
+               "certificateMinutes": 600,
+               "correctionReason": "O comprovante está ilegível. Anexe uma versão legível.",
+               "actionDeadlineDate": "2027-06-30",
+               "deadlineIsMock": true
+            },
+            {
+               "id": "B08",
+               "lineageId": "B08",
+               "activityLocalId": "25_025",
+               "catalogVersion": "2025-03-26",
+               "status": "nao_aprovada",
+               "origin": "manual",
+               "title": "Estágio anterior ao ingresso",
+               "academicPeriodId": "2025-1",
+               "startDate": "2025-02-18",
+               "endDate": "2025-08-17",
+               "requestedMinutes": 9600,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "nao_aprovada",
+                     "occurredAt": "2026-03-02T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B08",
+               "decisionReason": "Atividade realizada antes do ingresso; estágio não obrigatório prevê 20h por semestre.",
+               "actionDeadlineDate": "2027-06-30",
+               "deadlineIsMock": true
+            }
+         ],
+         "expected": {
+            "approvedMinutes": 1560,
+            "requiredMinutes": 9600,
+            "remainingMinutes": 8040,
+            "reservedMinutes": 1800,
+            "budgets": {
+               "25_009": {
+                  "approvedMinutes": 1260,
+                  "availableMinutes": 4740
+               },
+               "25_012": {
+                  "reservedMinutes": 1200,
+                  "availableMinutes": 1800
+               }
+            }
+         }
+      },
+      {
+         "id": "limite_aprovado",
+         "label": "Limite total aprovado atingido",
+         "studentOverrides": {},
+         "requests": [
+            {
+               "id": "L01",
+               "lineageId": "L01",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 6000,
+               "approvedMinutes": 6000,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-L01"
+            }
+         ],
+         "expected": {
+            "budgetAvailableMinutes": 0,
+            "reason": "approved_limit_reached"
+         }
+      },
+      {
+         "id": "saldo_reservado",
+         "label": "Saldo ocupado por análise",
+         "studentOverrides": {},
+         "requests": [
+            {
+               "id": "R01",
+               "lineageId": "R01",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 4800,
+               "approvedMinutes": 4800,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-R01"
+            },
+            {
+               "id": "R02",
+               "lineageId": "R02",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "em_analise",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 1200,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "em_analise",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-R02"
+            }
+         ],
+         "expected": {
+            "budgetAvailableMinutes": 0,
+            "reason": "reserved_in_review"
+         }
+      },
+      {
+         "id": "limite_semestral",
+         "label": "Estágio com semestre ocupado",
+         "studentOverrides": {},
+         "requests": [
+            {
+               "id": "S01",
+               "lineageId": "S01",
+               "activityLocalId": "25_025",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 900,
+               "approvedMinutes": 900,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-S01"
+            },
+            {
+               "id": "S02",
+               "lineageId": "S02",
+               "activityLocalId": "25_025",
+               "catalogVersion": "2025-03-26",
+               "status": "em_analise",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 300,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "em_analise",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-S02"
+            }
+         ],
+         "expected": {
+            "semesterAvailableMinutes": 0,
+            "typeAvailableMinutes": 10800
+         }
+      },
+      {
+         "id": "uso_unico",
+         "label": "Aproveitamento já utilizado",
+         "studentOverrides": {
+            "eligibility": ["catalogo_do_aluno", "transferencia_externa"]
+         },
+         "requests": [
+            {
+               "id": "U01",
+               "lineageId": "U01",
+               "activityLocalId": "25_028",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 1200,
+               "approvedMinutes": 1200,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-U01"
+            }
+         ],
+         "expected": {
+            "oneTimeConsumed": true
+         }
+      },
+      {
+         "id": "concluido",
+         "label": "Carga do curso completa",
+         "studentOverrides": {},
+         "requests": [
+            {
+               "id": "C01",
+               "lineageId": "C01",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 6000,
+               "approvedMinutes": 6000,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-C01"
+            },
+            {
+               "id": "C02",
+               "lineageId": "C02",
+               "activityLocalId": "25_016",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Atividade fictícia de demonstração",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 3600,
+               "approvedMinutes": 3600,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-C02"
+            }
+         ],
+         "expected": {
+            "approvedMinutes": 9600,
+            "remainingMinutes": 0
+         }
+      },
+      {
+         "id": "vazio",
+         "label": "Aluno sem registros",
+         "studentOverrides": {},
+         "requests": [],
+         "expected": {
+            "approvedMinutes": 0,
+            "remainingMinutes": 9600
+         }
+      },
+      {
+         "id": "concluinte",
+         "label": "Prazo de entrega configurado no mock",
+         "studentOverrides": {
+            "isConcluding": true,
+            "expectedConclusionDate": "2026-12-15",
+            "submissionDeadlineDate": "2026-11-30",
+            "deadlineIsMock": true
+         },
+         "requests": [
+            {
+               "id": "B01",
+               "lineageId": "B01",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Oficina de comunicação profissional",
+               "academicPeriodId": "2026-1",
+               "startDate": "2026-03-19",
+               "endDate": "2026-03-19",
+               "requestedMinutes": 600,
+               "approvedMinutes": 60,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-03-19T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B01",
+               "decisionReason": "Aprovação parcial fictícia: atribuição de 1h na análise. Preserve solicitado e computado."
+            },
+            {
+               "id": "B02",
+               "lineageId": "B02",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Encontro acadêmico: tecnologia e negócios",
+               "academicPeriodId": "2026-1",
+               "startDate": "2026-03-04",
+               "endDate": "2026-03-04",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-03-04T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B02"
+            },
+            {
+               "id": "B03",
+               "lineageId": "B03",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Palestra: cultura digital",
+               "academicPeriodId": "2026-1",
+               "startDate": "2026-04-01",
+               "endDate": "2026-04-01",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-04-01T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B03"
+            },
+            {
+               "id": "B04",
+               "lineageId": "B04",
+               "activityLocalId": "25_009",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Semana acadêmica de gestão",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-22",
+               "endDate": "2026-09-22",
+               "requestedMinutes": null,
+               "approvedMinutes": 600,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-22T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B04"
+            },
+            {
+               "id": "B05",
+               "lineageId": "B05",
+               "activityLocalId": "25_030",
+               "catalogVersion": "2025-03-26",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Evento institucional fictício",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-08-10",
+               "endDate": "2026-08-10",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-08-10T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-B05",
+               "fixtureNotice": "5h inventadas para o mock; print não confirma esta duração. Tipo sem regra disponível."
+            },
+            {
+               "id": "B06",
+               "lineageId": "B06",
+               "activityLocalId": "25_012",
+               "catalogVersion": "2025-03-26",
+               "status": "em_analise",
+               "origin": "manual",
+               "title": "Curso online de ferramentas de produtividade",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 1200,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [
+                  {
+                     "id": "FA01",
+                     "name": "certificado-demonstracao.pdf",
+                     "demoOnly": true,
+                     "bytesAvailable": false,
+                     "requirementKeys": ["certificado", "tempo"]
+                  }
+               ],
+               "history": [
+                  {
+                     "event": "em_analise",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B06",
+               "certificateMinutes": 1200
+            },
+            {
+               "id": "B07",
+               "lineageId": "B07",
+               "activityLocalId": "25_016",
+               "catalogVersion": "2025-03-26",
+               "status": "precisa_correcao",
+               "origin": "manual",
+               "title": "Curso de extensão: comunicação e carreira",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": 600,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "precisa_correcao",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B07",
+               "certificateMinutes": 600,
+               "correctionReason": "O comprovante está ilegível. Anexe uma versão legível.",
+               "actionDeadlineDate": "2027-06-30",
+               "deadlineIsMock": true
+            },
+            {
+               "id": "B08",
+               "lineageId": "B08",
+               "activityLocalId": "25_025",
+               "catalogVersion": "2025-03-26",
+               "status": "nao_aprovada",
+               "origin": "manual",
+               "title": "Estágio anterior ao ingresso",
+               "academicPeriodId": "2025-1",
+               "startDate": "2025-02-18",
+               "endDate": "2025-08-17",
+               "requestedMinutes": 9600,
+               "approvedMinutes": 0,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "nao_aprovada",
+                     "occurredAt": "2026-03-02T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-B08",
+               "decisionReason": "Atividade realizada antes do ingresso; estágio não obrigatório prevê 20h por semestre.",
+               "actionDeadlineDate": "2027-06-30",
+               "deadlineIsMock": true
+            }
+         ],
+         "expected": {
+            "displayDeadlineFromProfile": true
+         }
+      },
+      {
+         "id": "historico_legado",
+         "label": "Preservar códigos e limites antigos",
+         "studentOverrides": {
+            "catalogVersion": "LEGADO-MOCK",
+            "requiredMinutes": 12000,
+            "admissionDate": "2023-01-15"
+         },
+         "requests": [
+            {
+               "id": "H01",
+               "lineageId": "H01",
+               "activityLocalId": "18_021",
+               "catalogVersion": "LEGADO-MOCK",
+               "status": "aprovada",
+               "origin": "manual",
+               "title": "Registro legado fictício: 18_021",
+               "academicPeriodId": "2023-2",
+               "startDate": "2023-10-02",
+               "endDate": "2023-10-02",
+               "requestedMinutes": 9600,
+               "approvedMinutes": 9600,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2023-10-02T15:00:00-03:00"
+                  }
+               ],
+               "protocol": "MOCK-H01"
+            },
+            {
+               "id": "H02",
+               "lineageId": "H02",
+               "activityLocalId": "007",
+               "catalogVersion": "LEGADO-MOCK",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Registro legado fictício: 007",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": null,
+               "approvedMinutes": 180,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-H02"
+            },
+            {
+               "id": "H03",
+               "lineageId": "H03",
+               "activityLocalId": "18_007",
+               "catalogVersion": "LEGADO-MOCK",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Registro legado fictício: 18_007",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": null,
+               "approvedMinutes": 360,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-H03"
+            },
+            {
+               "id": "H04",
+               "lineageId": "H04",
+               "activityLocalId": "18_008",
+               "catalogVersion": "LEGADO-MOCK",
+               "status": "aprovada",
+               "origin": "institutional",
+               "title": "Registro legado fictício: 18_008",
+               "academicPeriodId": "2026-2",
+               "startDate": "2026-09-20",
+               "endDate": "2026-09-20",
+               "requestedMinutes": null,
+               "approvedMinutes": 300,
+               "description": "Dados fictícios para apresentar o front.",
+               "attachments": [],
+               "history": [
+                  {
+                     "event": "aprovada",
+                     "occurredAt": "2026-09-20T15:00:00-03:00"
+                  }
+               ],
+               "eventId": "EV-MOCK-H04"
+            }
+         ],
+         "legacyBudgetsObserved": [
+            {
+               "code": "18_021",
+               "limitMinutes": 9600
+            },
+            {
+               "code": "007",
+               "limitMinutes": 3600
+            },
+            {
+               "code": "18_007",
+               "limitMinutes": 4800
+            },
+            {
+               "code": "18_008",
+               "limitMinutes": 3600
+            }
+         ],
+         "expected": {
+            "approvedMinutes": 10440,
+            "remainingMinutes": 1560,
+            "doNotApply2025Catalog": true
+         }
+      }
+   ],
+   "uiOnlyScenarios": [
+      {
+         "id": "loading",
+         "effect": "latência curta sem modificar decisões"
+      },
+      {
+         "id": "send_error",
+         "effect": "primeira tentativa falha; retry preserva idempotência"
+      },
+      {
+         "id": "partial_approval",
+         "effect": "usar B01 do cenário base"
+      },
+      {
+         "id": "expired_deadline",
+         "effect": "sobrescrever actionDeadlineDate com 2026-09-30; data de referência é 2026-10-05"
+      }
+   ]
+}
